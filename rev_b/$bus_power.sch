@@ -196,7 +196,7 @@ F 3 "" H 5000 6600 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 2850 1600 0    50   ~ 0
-LPWR4
+MPWR0
 $Comp
 L TERMINATE_JUMPER J1
 U 1 1 53E8D609
@@ -403,4 +403,6 @@ Text Label 3500 4900 0    50   ~ 0
 MPWR4
 Text Label 3500 5700 0    50   ~ 0
 LPWR4
+Text Label 3500 2500 0    50   ~ 0
+MGND
 $EndSCHEMATC
