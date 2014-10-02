@@ -35,6 +35,14 @@ If this board is at the end of the bus, the termination jumper
 (J1) can be connected between pins 1 and 2 to provide 120 Ohms
 of bus termination via R1.
 
+### Issues
+
+* Power switch does not control daisy chain power.
+
+* The bus connector should be centered.
+
+* Provide a power on/off LED.
+
 ## MOSFET Polarity Protection Video
 
 There is a nifty
