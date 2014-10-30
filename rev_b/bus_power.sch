@@ -31,7 +31,7 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:bus_power-cache
-EELAYER 24 0
+EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8

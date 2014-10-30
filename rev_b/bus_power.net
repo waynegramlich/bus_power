@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/wayne/public_html/projects/bus_power/rev_b/bus_power.sch)
-    (date "Wed 01 Oct 2014 08:48:30 PM PDT")
+    (date "Sun 19 Oct 2014 05:13:30 PM PDT")
     (tool "Eeschema (2014-jul-16 BZR unknown)-product"))
   (components
     (comp (ref H1)
@@ -95,6 +95,12 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 53E91E68)))
   (libparts
+    (libpart (lib bus_power) (part 3MM_HOLE)
+      (fields
+        (field (name Reference) H)
+        (field (name Value) 3MM_HOLE))
+      (pins
+        (pin (num 1) (name GND) (type power_in))))
     (libpart (lib bus_power) (part BUS_MASTER_HEADER)
       (description "Bus connector that puts power on the bus")
       (fields
@@ -111,12 +117,6 @@
         (pin (num 8) (name BGND2) (type power_in))
         (pin (num 9) (name BPWR1) (type power_in))
         (pin (num 10) (name BPWR2) (type power_in))))
-    (libpart (lib bus_power) (part 3MM_HOLE)
-      (fields
-        (field (name Reference) H)
-        (field (name Value) 3MM_HOLE))
-      (pins
-        (pin (num 1) (name GND) (type power_in))))
     (libpart (lib bus_power) (part DPDT)
       (fields
         (field (name Reference) SW)
@@ -139,6 +139,13 @@
       (pins
         (pin (num 1) (name -) (type power_in))
         (pin (num 2) (name +) (type power_in))))
+    (libpart (lib bus_power) (part POWER_CONNECTOR_ALT)
+      (fields
+        (field (name Reference) N)
+        (field (name Value) POWER_CONNECTOR_ALT))
+      (pins
+        (pin (num 1) (name -) (type power_in))
+        (pin (num 2) (name +) (type power_out))))
     (libpart (lib bus_power) (part P_CHANNEL_MOSET_HORIZ)
       (fields
         (field (name Reference) Q)
@@ -170,14 +177,7 @@
       (pins
         (pin (num 1) (name ON) (type BiDi))
         (pin (num 2) (name COM) (type BiDi))
-        (pin (num 3) (name OFF) (type BiDi))))
-    (libpart (lib bus_power) (part POWER_CONNECTOR_ALT)
-      (fields
-        (field (name Reference) N)
-        (field (name Value) POWER_CONNECTOR_ALT))
-      (pins
-        (pin (num 1) (name -) (type power_in))
-        (pin (num 2) (name +) (type power_out)))))
+        (pin (num 3) (name OFF) (type BiDi)))))
   (libraries
     (library (logical bus_power)
       (uri bus_power.lib)))

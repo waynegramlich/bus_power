@@ -8,6 +8,13 @@ connecting the power up backwards.  In addition there are
 polyfuses (which are kind of like circuit breakers) that protect
 against accidental shorts.
 
+## MOSFET Polarity Protection Video
+
+There is a nifty
+[YouTube video](https://www.youtube.com/watch?v=IrB-FPcv1Dc)
+that explains how a P-channel MOSFET polarity protection circuit
+works.
+
 ## Revision A
 
 The revision A schematic can be found in the `rev_a` directory
@@ -35,7 +42,7 @@ If this board is at the end of the bus, the termination jumper
 (J1) can be connected between pins 1 and 2 to provide 120 Ohms
 of bus termination via R1.
 
-### Issues
+## Revision A Issues
 
 * Power switch does not control daisy chain power.
 
@@ -43,10 +50,8 @@ of bus termination via R1.
 
 * Provide a power on/off LED.
 
-## MOSFET Polarity Protection Video
+## Revision B Issues
 
-There is a nifty
-[YouTube video](https://www.youtube.com/watch?v=IrB-FPcv1Dc)
-that explains how a P-channel MOSFET polarity protection circuit
-works.
+* There is request for a jumperable power LED.
+
 
