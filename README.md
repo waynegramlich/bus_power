@@ -54,4 +54,6 @@ of bus termination via R1.
 
 * There is request for a jumperable power LED.
 
+* Are terminal blocks oriented backwards?
+
 
